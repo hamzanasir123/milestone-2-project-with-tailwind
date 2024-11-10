@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -50,21 +51,22 @@ function Contact() {
                 width={139}
                 className='absolute ml-[70px]'
                 />
+              <form>
             <div className='grid sm:grid-cols-2 sm:h-[96px] sm:w-[600px] w-[400px] ml-[40px]'>
                 <div>
                 <label className='text-white mr-10 font-semibold '>Your Name</label>
-                <input type='text' placeholder=' Name' className='mt-2 h-[59px] w-[288px] rounded-xl bg-[#5a5e6483] opacity-75'/>
+                <input type='text' placeholder=' Name' className='mt-2 h-[59px] w-[288px] text-white rounded-xl bg-[#5a5e6483] opacity-75' required/>
                 </div>
                 <div>
                 <label className='text-white mr-10 font-semibold '>Your Email</label>
-                <input type='email' placeholder=' Email' className='mt-2 h-[59px] w-[288px] rounded-xl bg-[#5a5e6483] opacity-75'/>
+                <input type='email' placeholder=' Email' className='mt-2 h-[59px] w-[288px] text-white rounded-xl bg-[#5a5e6483] opacity-75' required/>
                 </div>
             </div>
             <div className='ml-[40px]'>
             <label className='text-white mr-10 font-semibold '>Your Message</label>
-            <textarea placeholder=' Write message...' className='mt-2 h-[280px] sm:w-[600px] w-[300px] rounded-xl bg-[#5a5e6483] opacity-75'/>
+            <textarea placeholder=' Write message...' className='mt-2 h-[280px] sm:w-[600px] text-white w-[300px] rounded-xl bg-[#5a5e6483] opacity-75' required/>
             </div>
-            <button className='relative h-[47px] ml-[76px] sm:ml-[37px] w-[232px] rounded-xl mt-4 bg-[#00ADB5] text-white font-semibold'>
+            <button type='submit'  className='relative h-[47px] ml-[76px] sm:ml-[37px] w-[232px] rounded-xl mt-4 bg-[#00ADB5] text-white font-semibold'>
                 <Image
                 src={"/send.png"}
                 alt='pic'
@@ -74,6 +76,7 @@ function Contact() {
                 />
                 Send message
             </button>
+            </form>
             <Image
                 src={"/mail.png"}
                 alt='pic'

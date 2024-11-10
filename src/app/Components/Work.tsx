@@ -65,11 +65,11 @@ function Work() {
                 UI/UX
               </button>
               </div>
-              <div className="mx-6">
+              <div className="mx-10">
               <div className="relative text-center">
               <div className="flex flex-wrap gap-5">
                 {activeTab === 'Projects' &&  projects.map((project) => (
-                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[140px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
                   <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
@@ -77,13 +77,13 @@ function Work() {
                   alt="Project"
                   height={158}
                   width={206}
-                  className="sm:ml-16 w-[90px] sm:w-[206px] rounded-md m-4 sm:m-0"
+                  className="sm:ml-16 w-[90px] sm:w-[206px] ml-6 rounded-md m-4 sm:m-0"
                   />
                   </Link>
                 </div>
                 ))}
                 {activeTab === 'Assignments' &&  assignments.map((project) => (
-                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[140px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
                   <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
@@ -97,7 +97,7 @@ function Work() {
                 </div>
                 ))}
                 {activeTab === 'Milestones' &&  milestones.map((project) => (
-                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[140px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
                   <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
@@ -111,7 +111,7 @@ function Work() {
                 </div>
                 ))}
                 {activeTab === 'UI/UX' &&  uiux.map((project) => (
-                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[140px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
                   <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image

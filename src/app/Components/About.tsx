@@ -6,7 +6,7 @@ function About() {
   return (
     <>
     <div id='About' className='grid md:grid-cols-2 mt-[400px] sm:mt-[0px]'>
-        <div className='relative sm:mx-32 mx-5 sm:my-24 '>
+        <div className='relative sm:mx-32 mx-10 sm:my-24 '>
         <Image src={"/Vector 141.png"} alt='pic' width={61} height={46} className='absolute'/>
         <br/>
         <br/>

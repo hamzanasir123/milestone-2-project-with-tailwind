@@ -5,7 +5,9 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <div id='Footer' className='m-20 mt-[700px] sm:mt-[100px]'>
+    <div id='Footer' className='m-20 mt-[500px] sm:mt-[100px]'>
+    <hr/>
+    <br/>
         <div className='flex flex-wrap px-20 text-center justify-center gap-7 items-center '>
             <Link href={""}>
             <Image
@@ -67,8 +69,8 @@ function Footer() {
             </Link>
         </div>
         <div className='flex flex-wrap text-white sm:justify-end justify-center'>
-            <Link href={""} className='underline'>Terms of service - </Link>
-            <Link href={""} className='underline'>Privacy policy</Link>
+            <Link href={"/Privicy-Policy"} className='underline'>Terms of service - </Link>
+            <Link href={"/Privicy-Policy"} className='underline'>Privacy policy</Link>
         </div>
     </div>
     </>
