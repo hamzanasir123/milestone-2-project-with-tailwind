@@ -20,11 +20,11 @@ function page() {
         <br/>
         <p className='text-center text-2xl font-semibold text-white'>3. User Conduct</p>
         <br/>
-        <p className='text-gray-400'>You agree to use this website only for lawful purposes and in a way that does not infringe on the rights of, restrict, or inhibit anyone else’s use of the website. Prohibited behavior includes harassing or causing distress or inconvenience to any other user, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within this website.</p>
+        <p className='text-gray-400'>You agree to use this website only for lawful purposes and in a way that does not infringe on the rights of, restrict, or inhibit anyone elses use of the website. Prohibited behavior includes harassing or causing distress or inconvenience to any other user, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within this website.</p>
         <br/>
         <p className='text-center text-2xl font-semibold text-white'>4. Disclaimer of Warranties</p>
         <br/>
-        <p className='text-gray-400'>The information on this website is provided on an "as-is" basis without warranties of any kind, either express or implied. While every effort is made to keep the content of this website accurate and up-to-date,Hamza Nasir makes no warranties or representations about the accuracy, completeness, or suitability of any information, products, or services offered on this site.</p>
+        <p className='text-gray-400'>The information on this website is provided on an as-is basis without warranties of any kind, either express or implied. While every effort is made to keep the content of this website accurate and up-to-date,Hamza Nasir makes no warranties or representations about the accuracy, completeness, or suitability of any information, products, or services offered on this site.</p>
         <br/>
         <p className='text-center text-2xl font-semibold text-white'>5. Limitation of Liability</p>
         <br/>
