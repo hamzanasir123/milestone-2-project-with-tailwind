@@ -5,10 +5,10 @@ import React from 'react'
 function Contact() {
   return (
     <>
-    <div id='Contact' className='grid grid-cols-2 h-screen '>
-    <div className="relative m-20  mt-32">
-          <p className="text-5xl ml-[100px] font-bold text-white ">Got a project in</p>
-          <p className="text-6xl font-bold ml-[100px] text-[#00ADB5]">mind?</p>
+    <div id='Contact' className='grid sm:grid-cols-2 h-screen '>
+    <div className="relative sm:m-20  mt-32">
+          <p className="sm:text-5xl text-3xl sm:ml-[100px] ml-[20px] font-bold text-white ">Got a project in</p>
+          <p className="sm:text-6xl text-4xl font-bold ml-[20px] sm:ml-[100px] text-[#00ADB5]">mind?</p>
           <Image
             src={"/Vector 186 (1).png"}
             alt='Pic'
@@ -21,16 +21,16 @@ function Contact() {
             alt='Pic'
             height={24}
             width={190}
-            className='absolute ml-[195px] mt-[335px]'
+            className='absolute sm:ml-[195px] ml-[100px] sm:mt-[340px] mt-[240px]'
             />
           <Image 
           src={"/Group 2372.png"}
           alt='Pic'
             height={348}
             width={255}
-            className='absolute ml-[200px]'
+            className='absolute sm:ml-[200px] h-[250px] sm:h-[348px] sm:w-[255px] w-[200px] ml-[100px]'
           />
-            <div className="h-[56px] w-[56px] bg-black mt-[300px]">
+            <div className="hidden md:block h-[56px] w-[56px] bg-black mt-[300px]">
         <Link href={"#Footer"}>
           <Image
             src={"/Group 2347.png"}
@@ -42,7 +42,7 @@ function Contact() {
         </Link>
       </div>
         </div>
-        <div className='relative  mt-32 '>
+        <div className='relative  sm:mt-32 mt-[300px]'>
         <Image
                 src={"/keyboard.png"}
                 alt='pic'
@@ -50,7 +50,7 @@ function Contact() {
                 width={139}
                 className='absolute ml-[70px]'
                 />
-            <div className='grid grid-cols-2 h-[96px] w-[600px]'>
+            <div className='grid sm:grid-cols-2 sm:h-[96px] sm:w-[600px] w-[400px] ml-[40px]'>
                 <div>
                 <label className='text-white mr-10 font-semibold '>Your Name</label>
                 <input type='text' placeholder=' Name' className='mt-2 h-[59px] w-[288px] rounded-xl bg-[#5a5e6483] opacity-75'/>
@@ -60,11 +60,11 @@ function Contact() {
                 <input type='email' placeholder=' Email' className='mt-2 h-[59px] w-[288px] rounded-xl bg-[#5a5e6483] opacity-75'/>
                 </div>
             </div>
-            <div>
+            <div className='ml-[40px]'>
             <label className='text-white mr-10 font-semibold '>Your Message</label>
-            <textarea placeholder=' Write message...' className='mt-2 h-[280px] w-[600px] rounded-xl bg-[#5a5e6483] opacity-75'/>
+            <textarea placeholder=' Write message...' className='mt-2 h-[280px] sm:w-[600px] w-[300px] rounded-xl bg-[#5a5e6483] opacity-75'/>
             </div>
-            <button className='relative h-[47px] w-[232px] rounded-xl mt-4 bg-[#00ADB5] text-white font-semibold'>
+            <button className='relative h-[47px] ml-[76px] sm:ml-[37px] w-[232px] rounded-xl mt-4 bg-[#00ADB5] text-white font-semibold'>
                 <Image
                 src={"/send.png"}
                 alt='pic'

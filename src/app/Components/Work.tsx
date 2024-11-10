@@ -10,7 +10,7 @@ const projects = [
   { id: 3, title: 'Colour Picker', img: 'https://i.pinimg.com/736x/98/be/da/98beda8fb6b9d1bf3c81d150421a7ac8.jpg' , link: 'https://colours-rosy.vercel.app/' },
   { id: 4, title: 'Possword Generator', img: 'https://i.pinimg.com/736x/a6/59/a3/a659a35a870f8cc0ad564780024711e8.jpg' , link: 'https://possword-generator.vercel.app/' },
   { id: 5, title: 'Currency Converter', img: 'https://i.pinimg.com/736x/03/b7/55/03b7554cb30c285891ffbc7f80ba8462.jpg' , link: 'https://currency-converter-seven-self.vercel.app/' },
-  { id: 6, title: 'A UI of Ecommerce', img: 'https://i.pinimg.com/736x/5f/08/ac/5f08ac7ecd9cf158bdcd43085837f41f.jpg' , link: 'https://manzeil.vercel.app/' },
+  { id: 6, title: 'UI Ecommerce', img: 'https://i.pinimg.com/736x/5f/08/ac/5f08ac7ecd9cf158bdcd43085837f41f.jpg' , link: 'https://manzeil.vercel.app/' },
   { id: 7, title: 'Tic-Tac-Toe', img: 'https://i.pinimg.com/736x/cd/de/a3/cddea39b17378d5fc6eae06d00c6738d.jpg' , link: 'https://tic-tac-toe-six-lovat-56.vercel.app/' },
   { id: 8, title: 'Rock-Paper-Scissor', img: 'https://i.pinimg.com/736x/41/a9/8f/41a98fb3cef655eb56658464a4112f15.jpg' , link: 'https://rock-paper-scissor-five-rust.vercel.app/' },
 ];
@@ -41,14 +41,14 @@ function Work() {
 
   return (
     <>
-      <div id="Work" className="bg-custom-image bg-center w-full">
-        <div className="mx-[30px] ">
+      <div id="Work" className="bg-custom-image w-full">
+        <div className="sm:mx-[30px] ">
           <div className="grid grid-rows-1">
-            <div className="mx-32 mt-32 mb-4 ">
-              <span className="text-[64px] font-bold text-white">
+            <div className="mx-10 sm:mt-2 mt-10 mb-4 ">
+              <span className="sm:text-[64px] text-[30px] font-bold text-white">
                 My recent
               </span>
-              <span className="text-[64px] font-bold text-[#00ADB5]">
+              <span className="sm:text-[64px] text-[30px] font-bold text-[#00ADB5]">
                 {" "}
                 works
               </span><br/>
@@ -64,60 +64,62 @@ function Work() {
               <button onClick={() => setActiveTab('UI/UX')} className={`font-semibold px-[32px] py-[10px] rounded-[24px] text-white  mt-[30px] ${activeTab === 'UI/UX' ? 'bg-[#00ADB5]' : '' }`}>
                 UI/UX
               </button>
-              <div className="overflow-hidden w-full relative">
-              <div className="flex gap-5 animate-scroll">
+              </div>
+              <div className="mx-6">
+              <div className="relative text-center">
+              <div className="flex flex-wrap gap-5">
                 {activeTab === 'Projects' &&  projects.map((project) => (
-                  <div key={project.id} className="h-[280px] w-[368px] bg-[#5a5e6483] opacity-75 mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
-                  <p className="text-white text-center text-lg font-semibold pt-4">{project.title}</p>
+                  <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
                   src={project.img ?? 'https://i.pinimg.com/736x/96/ee/3a/96ee3a5133c8a49748dab7c0616547a1.jpg'}
                   alt="Project"
                   height={158}
                   width={206}
-                  className="ml-20"
+                  className="sm:ml-16 w-[90px] sm:w-[206px] rounded-md m-4 sm:m-0"
                   />
                   </Link>
                 </div>
                 ))}
                 {activeTab === 'Assignments' &&  assignments.map((project) => (
-                  <div key={project.id} className="h-[280px] w-[368px] bg-[#5a5e6483] opacity-75 mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
-                  <p className="text-white text-center text-lg font-semibold pt-4">{project.title}</p>
+                  <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
                   src={project.img ?? 'https://i.pinimg.com/736x/96/ee/3a/96ee3a5133c8a49748dab7c0616547a1.jpg'}
                   alt="Project"
                   height={158}
                   width={206}
-                  className="ml-20"
+                  className="sm:ml-16 w-[90px] sm:w-[206px] rounded-md m-4 sm:m-0"
                   />
                   </Link>
                 </div>
                 ))}
                 {activeTab === 'Milestones' &&  milestones.map((project) => (
-                  <div key={project.id} className="h-[280px] w-[368px] bg-[#5a5e6483] opacity-75 mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
-                  <p className="text-white text-center text-lg font-semibold pt-4">{project.title}</p>
+                  <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
                   src={project.img ?? 'https://i.pinimg.com/736x/96/ee/3a/96ee3a5133c8a49748dab7c0616547a1.jpg'}
                   alt="Project"
                   height={158}
                   width={206}
-                  className="ml-20"
+                  className="sm:ml-16 w-[90px] sm:w-[206px] rounded-md m-4 sm:m-0"
                   />
                   </Link>
                 </div>
                 ))}
                 {activeTab === 'UI/UX' &&  uiux.map((project) => (
-                  <div key={project.id} className="h-[280px] w-[368px] bg-[#5a5e6483] opacity-75 mt-[20px] rounded-2xl">
+                  <div key={project.id} className="sm:h-[280px] sm:w-[368px] w-[120px] sm:p-5 bg-[#5a5e6483] opacity-75 sm:mt-[20px] rounded-2xl">
                   <Link href={project.link ?? '/'} target="_blank">
-                  <p className="text-white text-center text-lg font-semibold pt-4">{project.title}</p>
+                  <p className="felx-wrap m-4 sm:m-0 text-white text-center sm:text-xl  font-semibold sm:pt-2">{project.title}</p>
                   <Image
                   src={project.img ?? 'https://i.pinimg.com/736x/96/ee/3a/96ee3a5133c8a49748dab7c0616547a1.jpg'}
                   alt="Project"
                   height={158}
                   width={206}
-                  className="ml-20"
+                  className="sm:ml-16 w-[90px] sm:w-[206px] rounded-md m-4 sm:m-0"
                   />
                   </Link>
                 </div>
@@ -125,17 +127,6 @@ function Work() {
               </div>
               </div>
             </div>
-            <div className="h-[56px] w-[56px] bg-black ml-[358px]">
-        <Link href={"#Contact"}>
-          <Image
-            src={"/Group 2347.png"}
-            width={21}
-            height={36}
-            alt="Arrow"
-            className="ml-4 pt-2"
-          />
-        </Link>
-      </div>
           </div>
         </div>
       </div>
