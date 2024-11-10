@@ -16,7 +16,7 @@ function About() {
         <span className="text-5xl font-bold text-[#00ADB5]">me</span>
         <br/>
         <br/>
-        <p className='text-white'>I am a passionate Frontend Developer with a knack for crafting dynamic, user-friendly interfaces. With expertise in HTML, CSS, Typescript, JavaScript, and frameworks like React and Nextjs, I love turning design ideas into responsive, high-performing web applications. My goal is to create seamless digital experiences that blend aesthetics with functionality. I thrive on solving complex challenges, learning new technologies, and staying on top of industry trends. Driven by curiosity and creativity, I am committed to building efficient, accessible, and engaging solutions. Let's connect and bring innovative ideas to life!</p>
+        <p className='text-white'>I am a passionate Frontend Developer with a knack for crafting dynamic, user-friendly interfaces. With expertise in HTML, CSS, Typescript, JavaScript, and frameworks like React and Nextjs, I love turning design ideas into responsive, high-performing web applications. My goal is to create seamless digital experiences that blend aesthetics with functionality. I thrive on solving complex challenges, learning new technologies, and staying on top of industry trends. Driven by curiosity and creativity, I am committed to building efficient, accessible, and engaging solutions. Lets connect and bring innovative ideas to life!</p>
         <Image src={"/Vector 186.png"} alt='pic' width={112} height={169} className='absolute ml-[60px]'/>
         <div className="h-[56px] w-[56px] bg-black ml-[270px] mt-[100px]">
         <Link href={"#Work"}>
